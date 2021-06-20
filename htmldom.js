@@ -44,9 +44,6 @@ parentNode.insertBefore(newNode, referenceNode)
 parentNode.removeChild(child) 
 
 
-
-
-
 // QUERY SELECTORS ARE USED TO TARGET THE NODES TO BE MANIPULATED
 
 // element.querySelector(selector)
