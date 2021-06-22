@@ -84,3 +84,24 @@ figcaption {
 /* style="text-decoration:none; */
 
 
+.pokemon {
+  min-width: 100px;
+  text-align: center;
+  padding: 25px;
+  border: 10px solid red;
+  border-radius: 6px;
+}
+
+.pokemon .name {
+  font-size: 3em;
+  text-transform: capitalize;
+  font-weight: bold;
+  color: orchid;
+}
+
+
+.pokemon .details {
+  display: flex;
+  justify-content: space-between;
+  margin: 1em 0 0;
+}
