@@ -17,4 +17,3 @@ const player = {
   console.log(`${name} lives in ${city}`);
 
 
-  
