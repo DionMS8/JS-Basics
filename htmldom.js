@@ -1,6 +1,6 @@
 //*************** DOM MANIPULATION AND EVENT HANDLING *****************//
 
-// WHEN YOUR HTML CODE IS PARSED IN THE WEB BROWSER, IT IS CONVERTED
+// WHEN A WEB PAGE IS LOADED IN THE BROWSER , THE HTML CODE IS PARSED AND CONVERTED
 // TO THE DOM
 
 // The DOM (or Document Object Model) is a tree-like representation of 
@@ -29,37 +29,37 @@ const div  = document.createElement('div')
 // THIS CREATES THE ELEMENT IN MEMORY SO THAT IT CAN BE MANIULATED BEFORE
 // BEING INSERTED INTO THE DOM
 
-// APPEND IS USED TO ADD THE ELEMENT TO THE DOM
 
-// 
+// APPENDCHILD => USED TO ADD AN ELEMENT TO THE DOM
 parentNode.appendChild(childNode) 
 // This appends childNode as the last child of parentNode
+
+// REMOVECHILD => USED TO REMOVE AN ELEMENT FROM THE DOM
+// This removes child from parentNode on the DOM and returns reference to child
+parentNode.removeChild(child) 
+
 
 // INSERTBEFORE
 parentNode.insertBefore(newNode, referenceNode) 
 // This inserts newNode into parentNode before referenceNode
 
-// REMOVECHILD
-// This removes child from parentNode on the DOM and returns reference to child
-parentNode.removeChild(child) 
 
+// QUERY SELECTORS ARE USED TO TARGET THE NODES IN THE DOM TO BE MANIPULATED
 
-// QUERY SELECTORS ARE USED TO TARGET THE NODES TO BE MANIPULATED
-
-// element.querySelector(selector)
+// document.querySelector(selector)
 // returns reference to the first match of selector
 
-// element.querySelectorAll(selectors)
+// document.querySelectorAll(selectors)
 // returns a “nodelist” containing references to all of the matches of the selectors
 
 const container = document.querySelector('#container');
-// select the #container div 
+// selects the #container div and assigns it to "container"
 
 console.dir(container.firstElementChild);                      
-// select the first child of #container => .display
+// selects the first child of #container => .display
 
 const controls = document.querySelector('.controls');   
-// select the .controls div
+// selects the .controls div
 
 console.dir(controls.previousElementSibling);                  
 // selects the prior sibling => .display
