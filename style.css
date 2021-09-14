@@ -1,0 +1,107 @@
+
+body * {
+    margin: 20px;
+    border: 1px solid red;
+}
+
+#touch {
+    filter: invert(100%);
+    border: 5px solid blue;
+}
+
+figure {
+    border: 1px #cccccc solid;
+    padding: 4px;
+    margin: auto;
+}
+
+figcaption {
+    background-color: rgb(24, 24, 153);
+    color: yellow;
+    font-style: italic;
+    padding: 2px;
+    text-align: center;
+}
+
+#broly {
+    display: flex;
+    align-items: center;
+    justify-content: center;   
+    width: 300px;
+    height: 180px;
+    border: 5px solid yellow;
+    filter: drop-shadow(8px 8px 10px gold) opacity(0.8) ;
+    filter: contrast(150%);
+    /* 
+    filter: grayscale(100%) invert(100%);
+    filter: contrast(200%) brightness(150%) blur(4px); ---- USING MULTIPLE FILTERS
+    */
+}
+
+
+#grad-text {
+    background-image: linear-gradient(
+        45deg,
+        #ff0a78,
+        rgb(220, 243, 9)
+      );
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 40px;
+    font-weight: 600;
+}
+
+#grad {
+    background-color: black;
+}
+
+
+.center {
+    display: flex;
+    align-items: center;
+    justify-content: center;       
+  }           
+      
+
+  #flame {
+    background: blue url('http://s3images.coroflot.com/user_files/individual_files/original_289858_gFsONj1YNXLSJ8hLxS9tu3G9Z.jpg');
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    margin-top: 20px;
+    font-size: 150px;
+  }
+  
+  @media (max-width: 600px) {
+    #flame {
+      font-size: 70px;
+    }
+  }
+
+/* REMOVING THE UNDERLINE FROM A LINK */
+
+/* style="text-decoration:none; */
+
+
+.pokemon {
+  min-width: 100px;
+  text-align: center;
+  padding: 25px;
+  border: 10px solid red;
+  border-radius: 6px;
+}
+
+.pokemon .name {
+  font-size: 3em;
+  text-transform: capitalize;
+  font-weight: bold;
+  color: orchid;
+}
+
+
+.pokemon .details {
+  display: flex;
+  justify-content: space-between;
+  margin: 1em 0 0;
+}
