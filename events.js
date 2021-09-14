@@ -1,23 +1,23 @@
 //*********************** EVENT HANDLING ****************************************************************************************************************************//
 
-function alertFunction() {
-    alert('NO TIME TO WASTE');
+alertFunction() => {
+    alert("NO TIME TO WASTE");
 };
 
 //METHOD 1: <button onclick="alert('Hello World')">Click Me</button>
 
-// <button onclick="document.getElementById('saiyanName').innerHTML=Date()">The time is?</button>
+<button onclick="document.getElementById('saiyanName').innerHTML=Date()">The time is?</button>
 
 // METHOD 2:
 // TARGET THE ELEMENT USING QUERY SELECTOR
 // CREATE A CONST FOR IT
 // ADD THE DESIRED EVENT ATTRIBUTE TO THE CONST USING AN ARROW FUNCTION 
-//const btn = document.querySelector('#btn');
+const btn = document.querySelector('#btn');
 
-//btn.onClick = alertFunction();
+btn.onClick = alertFunction();
 
 //METHOD 3:
-//btn.addEventListener('click', alertFunction());
+btn.addEventListener('click', alertFunction());
 
 
 // NOTE: Using named functions can clean up your code considerably.

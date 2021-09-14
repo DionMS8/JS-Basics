@@ -65,7 +65,7 @@ h1, h2{
 
 .delete{
     float: right;
-    background: #9361bf;
+    background: rgb(153, 255, 0);
     padding: 6px;
     border-radius: 4px;
     cursor: pointer;
@@ -73,7 +73,7 @@ h1, h2{
 }
 
 .delete:hover{
-    background: #333;
+    background: rgb(106, 150, 26);
 }
 
 #add-book{
@@ -94,8 +94,8 @@ h1, h2{
 }
 
 #add-book button{
-    border: 1px solid #9361bf;
-    background: #9361bf;
+    border: 1px solid rgb(153, 255, 0);
+    background: rgb(153, 255, 0);
     padding: 10px 20px;
     font-size: 16px;
     display: inline-block;
