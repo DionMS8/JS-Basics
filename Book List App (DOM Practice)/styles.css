@@ -44,7 +44,7 @@ h1, h2{
     color: #444;
 }
 
-#book-list, #add-book, #tabbed-content{
+#book-list, #add-vaccine, #tabbed-content{
     margin: 30px;
 }
 
@@ -65,23 +65,24 @@ h1, h2{
 
 .delete{
     float: right;
-    background: rgb(153, 255, 0);
+    background: rgb(15, 180, 144);
     padding: 6px;
     border-radius: 4px;
     cursor: pointer;
     color: white;
+    border: 1px solid black;
 }
 
 .delete:hover{
-    background: rgb(106, 150, 26);
+    background: rgb(11, 139, 112);
 }
 
-#add-book{
+#add-vaccine{
     width: 400px;
     margin: 0 auto;
 }
 
-#add-book input{
+#add-vaccine input{
     display: block;
     margin: 20px 0;
     padding: 10px;
@@ -91,14 +92,15 @@ h1, h2{
     box-sizing: border-box;
     width: 300px;
     float: left;
+    border: 1px solid black;
 }
 
-#add-book button{
-    border: 1px solid rgb(153, 255, 0);
-    background: rgb(153, 255, 0);
+#add-vaccine button{
+    border: 1px solid black;
+    background: rgb(15, 180, 144);
     padding: 10px 20px;
     font-size: 16px;
-    display: inline-block;
+    /*display: inline-block;*/
     margin: 0;
     border-radius: 0 4px 4px 0;
     cursor: pointer;
@@ -109,7 +111,7 @@ h1, h2{
     color: white;
 }
 
-#add-book:after{
+#add-vaccine:after{
     content: '';
     display: block;
     clear: both;

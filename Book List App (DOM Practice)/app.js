@@ -13,17 +13,58 @@ Array.from(btns).forEach((btn) => {
     })
 })
 
-//-----[PREVENT DEFAULT BEHAVIOUR]--------------------------------------------------------
+//-----[PREVENT DEFAULT BEHAVIOUR]------------------------------------------------------------------------------------------
 
 const link = document.querySelector("#page-banner a");
 
 link.addEventListener('click', (e) => {
   e.preventDefault();
-  console.log("Navigation to', e.target.textContent, 'was prevented");
+  console.log("Navigation to", e.target.textContent, "was prevented");
 });
 
 
 
-//-----------------------------------------------------------------------------------------
+//-----[EVENT BUBBLING]----------------------------------------------------------------------------------------------------------------------
 
+const list = document.querySelector("#book-list ul");
+
+list.addEventListener("click", (e) => {
+  if(e.target.className == "delete") {
+      const li = e.target.parentElement;
+      //li.parentNode.removeChild(li);
+      //SINCE THE PARENT NODE OF LI IS UL
+      list.removeChild(li);
+  }
+})
+
+
+//-----[FORMS]-------------------------------------------------------------------------------------------------------------------------
+
+// element = document.forms["id"]
+
+const addForm = document.forms["add-vaccine"]
+
+addForm.addEventListener("submit", (e) => {
+  e.preventDefault;
+  const value = addForm.querySelector('input[type="text"]').value; // GRABBING THE USER INPUT
+  // console.log(value);
+
+  // CREATING THE DOM ELEMENTS
+  const li = document.createElement("li");
+  const vaxName = document.createElement("span");
+  const deleteBtn = document.createElement("span");
+
+  // ADDING CONTENT
+  vaxName.textContent = value;
+  deleteBtn.textContent = "delete";
+  
+  // APPENDING THE ELEMENTS
+  li.appendChild(vaxName);
+  li.appendChild(deleteBtn);
+  list.appendChild(li);
+
+})
+
+
+//----------------------------------------------------------------------------------------------------------------------------------------------------
 
