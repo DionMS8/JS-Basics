@@ -1,4 +1,4 @@
-# JS-Basics
+# JS-Basics 🟡⚫🟡⚫
 
 ## Table of contents
 * [General Info](#general-info)
