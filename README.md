@@ -1,4 +1,4 @@
-# JS-Basics 🟡⚫🟡⚫
+# JavaScript Practice 🟡⚫🟡⚫
 
 ## Table of contents
 * [General Info](#general-info)
