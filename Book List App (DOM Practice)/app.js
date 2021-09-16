@@ -65,6 +65,7 @@ addForm.addEventListener("submit", (e) => {
   // ADDING CLASSES SO THAT THE CORRECT CSS STYLING IS APPLIED 
   vaxName.classList.add("name");
   deleteBtn.classList.add("delete");
+  // OR element.classList.remove("classname")
 
   // APPENDING THE ELEMENTS TO THE DOM
   li.appendChild(vaxName);
@@ -74,12 +75,47 @@ addForm.addEventListener("submit", (e) => {
 })
 
 
-//----------------------------------------------------------------------------------------------------------------------------------------------------
+//-----[CAPTURING ATTRIBUTES]-----------------------------------------------------------------------------------------------------------------------------------------------
+
+element.getAtrribute("id")
+element.getAtrribute("class")
+element.getAtrribute("href")
+
+element.setAtrribute("id", "newid")
+element.setAtrribute("class", "newclass")
+element.setAtrribute("href", "newhref")
+
+// CHECKING IF AN HTML ELEMENT HAS A PARTICULAR ATTRIBUTE
+// THIS WILL RETURN A TRUE/FALSE
+element.hasAtrribute("id")
+element.hasAtrribute("class")
+element.hasAtrribute("href")
+
+// REMOVING AN TRRIBUTE FROM AN HTML ELEMENT
+element.removeAtrribute("id")
+element.removeAtrribute("class")
+element.removeAtrribute("href")
+
+//-----[CSS STYLING]--------------------------------------------------------------------
 
 // element.style.cssproperty = "value"
 // element.style.marginTop = "20px"
 
 // .className => THIS IS USED TO ADD AN ELEMENT TO A CLASS
+
+ 
+
+//-----[CHECKBOXES AND CHANGE EVENTS]---------------------------------------------------------------------------------
+
+// HIDING THE VACCINES
+const hideBox = document.querySelector('#hide');
+hideBox.addEventListener('change', function(e){
+  if(hideBox.checked){
+    list.style.display = "none";
+  } else {
+    list.style.display = "initial";
+  }
+});
 
 
 

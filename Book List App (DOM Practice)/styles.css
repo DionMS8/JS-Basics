@@ -117,6 +117,15 @@ h1, h2{
     clear: both;
 }
 
+#add-vaccine #hide{
+    width: 30px;
+}
+  
+#add-vaccine label{
+    line-height: 52px;
+}
+
+
 /*
 #tabbed-content li{
     display: inline-block;
