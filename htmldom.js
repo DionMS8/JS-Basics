@@ -7,13 +7,6 @@
 // the contents of a webpage - a tree of “nodes” with different 
 // relationships depending on how they’re arranged in the HTML document.
 
-/*
-<style>
-   .custom-class {
-        color: pink;
-    }
-</style> 
-*/
 
 <div id="container">              
   <div class="display"></div>
@@ -23,15 +16,16 @@
 // The #container div is a parent, with 2 children on the next level, 
 // each on their own “branch”. The children are considered siblings. 
 
-myElement = document.createElement('tagName', [options])
-const div  = document.createElement('div')
+myElement = document.createElement('tagName', [options]);
 
-// THIS CREATES THE ELEMENT IN MEMORY SO THAT IT CAN BE MANIULATED BEFORE
+const div  = document.createElement("div");
+
+// THIS CREATES THE ELEMENT IN MEMORY SO THAT IT CAN BE MANIPULATED BEFORE
 // BEING INSERTED INTO THE DOM
 
 // APPEND IS USED TO ADD THE ELEMENT TO THE DOM
 
-// 
+
 parentNode.appendChild(childNode) 
 // This appends childNode as the last child of parentNode
 
@@ -65,4 +59,10 @@ console.dir(controls.previousElementSibling);
 // selects the prior sibling => .display
 
 
-
+/*
+<style>
+   .custom-class {
+        color: pink;
+    }
+</style> 
+*/

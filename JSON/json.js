@@ -50,11 +50,16 @@ var zfighters = [
         name: "Broly",
         age: 80
     }
-]
+];
+
+var output = " ";
 
 for (var i = 0; i < zfighters.length; i++){
-    console.log(zfighters[i].name);
+    // console.log(zfighters[i].name);
+    output += `<li> ${zfighters[i].name} </li>`;
 }
+
+document.getElementById("dbz-names").innerHTML = output;
 
 
 
