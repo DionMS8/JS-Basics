@@ -24,5 +24,7 @@ This repo outlines my journey to mastering JavaScript.
 - Arrays ✔
 - Inheritance ✔
 - APIs ✔
-- Destructuring✔
+- Destructuring Objects ✔
+- JavaScript Object Notation (JSON) ✔
+- Asynchronous JavaScript for XML (AJAX) ✔
 
