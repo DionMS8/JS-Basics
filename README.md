@@ -37,3 +37,5 @@ This repo outlines my journey to mastering JavaScript.
 - freeCodeCamp
 - TraversyMedia
 - Clever Programmer
+
+## JS Tools and Libraries
