@@ -4,7 +4,9 @@
 * [General Info](#general-info)
 * [Topics Covered](#topics-covered)
 * [Mini Projects](#mini-projects)
-* [References](#references)
+* [Design Patterns](#design-patterns)
+* [JS Tools and Libraries](#js-tools)
+* [Learning Resources](#resources)
 
 
 ## General Information
@@ -34,7 +36,7 @@ This repo outlines my journey to mastering JavaScript.
 ## JS Tools and Libraries
 
 
-## References
+## Learning Resources
 
 - W3Schools
 - freeCodeCamp
