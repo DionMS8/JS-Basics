@@ -29,3 +29,11 @@ This repo outlines my journey to mastering JavaScript.
 - Asynchronous JavaScript for XML (AJAX) ✔
 
 ## Design Patterns
+
+
+## References
+
+- W3Schools
+- freeCodeCamp
+- TraversyMedia
+- Clever Programmer
