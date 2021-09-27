@@ -28,3 +28,4 @@ This repo outlines my journey to mastering JavaScript.
 - JavaScript Object Notation (JSON) ✔
 - Asynchronous JavaScript for XML (AJAX) ✔
 
+## Design Patterns
