@@ -31,6 +31,9 @@ This repo outlines my journey to mastering JavaScript.
 ## Design Patterns
 
 
+## JS Tools and Libraries
+
+
 ## References
 
 - W3Schools
@@ -38,4 +41,4 @@ This repo outlines my journey to mastering JavaScript.
 - TraversyMedia
 - Clever Programmer
 
-## JS Tools and Libraries
+
