@@ -1,0 +1,47 @@
+#-----[COMMON TERMS]----------------------------------------------------------------------------------------------------------------------------
+
+- JSON => JAVASCRIPT OBJECT NOTATION
+- AJAX => ASYNCHRONOUS JAVASCRIPT IN XML
+
+- AJAX => THIS IS USED TO SEND DATA BETWEEN THE CLIENT AND 
+THE SERVER WITHOUT HAVING TO RELOAD THE BROWSER PAGE
+- AJAX CAN BE USED TO SEND A REQUEST TO A JSON FILE 
+
+- BSON (JSON WITH MONGODB) ALLOWS FOR THE USE OF ADDITIONAL DATA TYPES
+- MIME => "Application/json"
+
+#-----[NOTES]-------------------------------------------------------------------------------------------------------------------------------------------
+
+- JSON IS A LIGHTWEIGHT DATA REPRESENTATION FORMAT 
+
+- IT IS USED TO SEND DATA BACK AND FORTH TO A SERVER AS TEXT
+- IT CAN BE PARSED INTO OBJECTS AND CLASSES
+- IT IS COMMONLY USED WITH APIS AND AJAX
+- IT HAS REPLACED XML BECAUSE IT IS EASIER TO READ
+
+
+#-----[CREATING AN OBJECT FOR A JSON FILE]--------------------------------------------------------------------------------------------------------------------------------------------
+
+RECALL: AN OBJECT IS COMPOSED OF KEY-VALUE PAIRS 
+
+
+NOTE: JSON FILES WILL COMMONLY HAVE ARRAYS OF OBJECTS NESTED 
+WITHIN EACH OTHER 
+
+
+# -----[ESSENTIAL FUNCTIONS]-------------------------------------------------------------------------------------------------------------------
+
+STRINGIFY() => THIS FUNCTION CONVERTS A JS OBJECT TO A STRING
+PARSE() => THIS FUNCTION CONVERTS A JS STRING TO AN OBJECT
+
+NOTE: THE VALUES WITHIN AN ARRAY OF JSON OBJECTS CANNOT BE 
+ACCESSED IF IT IS IN THE FORM OF A STRING.
+
+
+
+# -----[XMLHTTPREQUESTS]------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+

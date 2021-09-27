@@ -2,7 +2,7 @@
 // WITHOUT HAVING TO REPEATEDLY ACCESS THE NAME OF THE OBJECT
 
 const player = {
-  name: "Lionel Messi",
+  playerName: "Lionel Messi",
   club: "Paris Saint German (PSG)",
   address: {
   city: "Barcelona"
@@ -15,7 +15,7 @@ const player = {
   
   // console.log(`${name} plays for ${club}`);
   
-  console.log(`${name} lives in ${city}`);
+  console.log(`${playerName} lives in ${city} and plays with ${club}`);
 
 
 

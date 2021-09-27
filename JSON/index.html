@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>JSON PRACTICE</title>
+        <link rel="stylesheet" type="text/css" href="style.css" />
+    </head>
+
+    <body> 
+
+        <script type="text/javascript">
+
+            // CREATING A JS OBJECT FOR COMPANIES 
+            
+            let companies = [
+
+            {
+                "name": "Facebook",
+                "numberOfEmployees": 10000,
+                "ceo": "Mark",
+                "rating": 8.5
+            },
+
+            {
+                "name": "Apple",
+                "numberOfEmployees": 20000,
+                "ceo": "Jobs",
+                "rating": 7.5
+            },
+
+            {
+                "name": "Startup Company",
+                "numberOfEmployees": 500,
+                "ceo": null,
+                "rating": 4.3
+            }
+            ]
+
+            companies = JSON.stringify(companies);
+
+            // NOTE: PLACING THE OBJECT BETWEEN BACKTICKS WILL ALSO CONVERT IT INTO A STRING
+
+            // PRINTING THE COMPANIES OBJECT TO THE CONSOLE 
+            // console.log(companies);
+
+            // THE STRING CAN THEN BE PARSED INTO A JS OBJECT AS FOLLOWS
+            let companiesObject = JSON.parse(companies);
+
+            // AS A JS OBJECT, CERTAIN INFORMATION CAN NOW BE PULLED FROM THE JSON DATA
+            console.log(companiesObject[0].ceo);
+            console.log(companiesObject[1].name);
+            console.log(companiesObject[2].rating);
+
+
+            var xhttp = new XMLHttpRequest();
+            xhttp.onreadystatechange = function() {
+                if (this.readyState == 4 && this.status == 200) {
+                // Typical action to be performed when the document is ready:
+                document.getElementById("demo").innerHTML = xhttp.responseText;
+                }
+            };
+            xhttp.open("GET", "filename", true);
+            xhttp.send();
+
+
+        </script>
+
+    </body>
+
+
+</html>
+
+ 
+
