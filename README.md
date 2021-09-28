@@ -3,9 +3,6 @@
 ## Table of contents
 * [General Info](#general-info)
 * [Topics Covered](#topics-covered)
-<!--* [Mini Projects](#mini-projects)
-* [Design Patterns](#design-patterns)
-* [JS Tools and Libraries](#js-tools)-->
 * [Learning Resources](#resources)
 
 
