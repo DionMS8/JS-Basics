@@ -1,0 +1,21 @@
+{
+    "zfighters": [
+    { 
+        "name": "Goku", 
+        "age": 50
+    },
+    { 
+        "name": "Vegeta",
+        "age": 60
+    },
+    {
+        "name": "Gohan",
+        "age": 80
+    },
+    {
+        "name": "Broly",
+        "age": 90
+    }
+]
+
+}

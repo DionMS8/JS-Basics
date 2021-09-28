@@ -1,0 +1,173 @@
+#-----[COMMON TERMS]----------------------------------------------------------------------------------------------------------------------------
+
+- PACKAGE - contains all the files you need for a module
+- MODULES - JavaScript libraries you can include in your project
+- DEPENDENCIES - packages that your program needs to run 
+
+- PACKAGE.JSON FILE - This file contains all app info and a list of dependencies
+- PACKAGE-LOCK.JSON FILE - This file specifies the exact version of the dependencies to be installed
+- NODE_MODULES FOLDER - All installed packages are stored here (NOT PUSHED TO GITHUB REPO)
+- NODEMON PACKAGE - This monitors your program and automatically runs it whenever changes are saved (Global installation recommended)
+
+NOTE:
+- The node_modules folder is placed in the .gitignore so that it is not pushed to the GitHub repo
+- The require lines basically load the packages in and tell the compiler that these packages are going to be used. 
+ - Custom packages can be published to the NPM repo so that it can be used by other developers
+
+#-----[COMMANDS]-------------------------------------------------------------------------------------------------------------------------------
+
+# GET VERSION
+npm -v (or --version)
+
+# GET HELP
+npm help
+npm
+
+# CREATE PACKAGE.JSON
+npm init
+npm init -y (or --yes) // AVOIDS ASKING QUESTIONS 
+
+# SET DEFAULTS
+npm config set init-author-name "YOUR NAME"
+npm set init-license "MIT"
+
+# GET DEFAULTS (CHECK WHAT ARE THE DEFAULT VALUES)
+npm config get init-author-name
+npm get init-license
+
+# REMOVE DEFAULTS
+npm config delete init-author-name
+npm delete init-license
+
+# INSTALLING LOCAL PACKAGES
+npm install lodash --save (or npm install --save lodash) // SAVE WILL SAVE IT TO THE PACKAGE.JSON FILE
+npm install moment --save
+
+# INSTALLING A LOCAL PACKAGE AS A DEV DEPENDENCY
+npm install gulp gulp-sass --save-dev // THIS STORES THE PACKAGES IN A SINGLE DEV DEPENDENCIES OBJECT WITHIN THE PACKAGE.JSON FILE
+npm install packageName -D
+
+# MOVE TO ANOTHER FOLDER
+npm install // THIS TELLS THE PROGRAM TO LOOK AT THE PACKAGE.JSON FILE AND INSTALL THE RELEVANT PACKAGES AND DEPENDENCIES
+npm install --production // THIS TELLS THE PROGRAM TO INSTALL ALL DEPENDENCIES EXCEPT THE DEV DEPENDENCIES
+
+# REMOVING MODULES
+npm uninstall gulp-sass --save-dev
+npm remove gulp --save-dev
+ 
+#INSTALL CERTAIN VERSIONS
+npm install lodash@4.17.3 --save
+
+# UPDATE
+npm update lodash --save
+
+# INSTALL GLOBAL MODULE
+npm install -g nodemon
+npm install -g live-server
+
+# RUN NODEMON
+nodemon
+
+# FIND ROOT FOLDER
+npm root -g
+
+# REMOVE GLOBAL PACKAGES
+npm remove -g nodemon
+
+# LISTING PACKAGES IN THE PROJECT
+npm list
+npm list --depth 0
+npm list --depth 1
+
+# INSTALL LIVE-SERVER LOCALLY
+npm install live-server --save-dev
+
+# NPM SCRIPT
+"scripts": {
+    "start": "node index.js",
+    "dev": "live-server"
+  },
+
+# BUILDING THE APP FOR PRODUCTION AND DEPLOYMENT
+npm run build
+
+
+
+
+//-----[SEMANTIC VERSIONING]--------------------------------------------------------------------------------------------------
+
+VERSION FORMAT: A.B.C
+A => MAJOR VERSION (MAJOR CHANGES SUCH AS SYNTAX WHICH WILL BREAK THE CODE)
+B => MINOR VERSION (MINOR CHANGES WHICH WILL NOT BREAK THE CODE)
+C => PATCH VERSION (BUG FIXES)
+
+WHEN npm install IS RUN:
+* => THIS WILL UPDATE TO THE MOST RECENT OVERALL VERSION (NOT RECOMMENDED AS MAJOR VERSION CHANGES CAN RESULT IN SYNTAX CHANGES)
+^ => THIS WILL UPDATE THE MINOR VERSION IF NECESSARY
+~ => THIS WILL UPDATE THE PATCH VERSION IF NECESSARY
+
+NOTE:
+- WHEN THE MAJOR VERSION INCREMENTS, THE MINOR AND PATCH VERSION WILL RESET TO 0
+- WHEN THE MINOR VERSION INCREMENTS, THE PATCH VERSION WILL RESET TO 0
+
+npm view packageName versions
+
+npm install packageName@version
+npm install packageName@(*/^/~)version
+
+
+//-----[LOCAL AND GLOBAL PACKAGES]--------------------------------------------------------------------------------------------
+
+npm install -g packageName
+
+- GLOBAL VARIABLES ARE STORED ON YOUR MACHINE
+- npm root WILL GIVE THE LOCATION OF THE GLOBAL VARIABLES
+
+
+const name = require("packageName")
+
+
+#-----[GITIGNORE FILE]------------------------------------------------------------------------------------------------------------------------
+
+- AS PACKAGES AND DEPENDENCIES ARE INSTALLED, THE NODE_MODULES FOLDER CAN BECOME INSANELY LARGE.
+- CONSEQUENTLY, IT IS HIGHLY RECOMMENDED THAT IT NOT BE PUSHED TO YOUR GITHUB REPOSITORY. 
+- TO DO THIS, THE .GITIGNORE FILE IS USED.
+
+# CREATING A .GITIGNORE FILE
+git add .gitignore
+
+# REMOVING THE NODE MODULE FOLDER FROM GIT TRACKING
+git rm -r --cached node_modules
+
+# ADDING THE NODE_MODULES FOLDER TO THE .GITIGNORE FILE
+echo node_modules >> .gitignore
+
+# COMMITTING CHANGES 
+git commit -m 'Remove node_modules'
+
+# PUSHING COMMITS TO GITHUB
+git push origin master
+
+
+#-----[RECOMMENDED PACKAGES]------------------------------------------------------------------------------------------------------------------------------------------
+
+=> date-fns
+=> dotenv - THIS ALLOWS YOU TO STORE ALL ENVIRONMENT VARIABLES 
+SUCH AS DB INFORMATION IN A SINGLE FOLDER SO THAT IT CAN BE 
+CALLED TO ANY FILE WITH THE FOLLOWING THE LINE OF CODE:
+
+require("dotenv").config()
+
+NOTE: SINCE IT WILL ONLY BE USED IN DEVELOPMENT, IT CAN BE 
+INSTALLED AS A DEV DEPENDENCY.
+
+=> socket.io - HELPS FOR REAL-TIME COMMUNICATION BETWEEN USERS 
+=> uuid - HELPS TO CREATE UNIQUE IDENTIFIERS FOR COMPONENTS
+=> axios - CAN BE USED INSTEAD OF FETCH TO DEAL WITH REQUESTS AND RESPONSES BETWEEN THE USER AND SERVER
+=> classnames -
+
+
+
+
+
+

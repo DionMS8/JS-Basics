@@ -63,6 +63,24 @@ document.getElementById("dbz-names").innerHTML = output;
 
 
 
+// PRACTICING USING AJAX TO REQUEST DATA FROM A WEB SERVER
+
+// CREATING AN XMLHttpRequest OBJECT
+var xhttp = new XMLHttpRequest();
+    
+// THE READY STATE CHANGE EVENT IS TRIGGERED WHENEVER THE READY STATE ATTRIBUTE CHANGES
+// CREATING AN EVENT HANDLER FUNCTION TO BE CALLED WHENEVER THE READY STATE CHANGE EVENT IS TRIGGERED
+xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+    // IF THESE CONDITIONS ARE MET, THEN THE REQUEST HAS BEEN COMPLETED SUCCESSFULLY
+    document.getElementById("demo").innerHTML = xhttp.responseText;
+    }
+};
+xhttp.open("GET", "zfighters.json", true);
+xhttp.send();
+
+
+
 //-----[EXAMPLE 3]--------------------------------------------------------------------------------------------------------------------------------------
 
 // CREATING A CITIZENS OBJECT

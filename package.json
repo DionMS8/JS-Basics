@@ -1,0 +1,19 @@
+{
+  "name": "js-practice-main",
+  "version": "1.0.0",
+  "description": "## Table of contents * [General Info](#general-info) * [Topics Covered](#topics-covered) * [Mini Projects](#mini-projects) * [References](#references)",
+  "main": "api.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DionMS8/JS-Practice.git"
+  },
+  "author": "Dion Singh",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/DionMS8/JS-Practice/issues"
+  },
+  "homepage": "https://github.com/DionMS8/JS-Practice#readme"
+}
