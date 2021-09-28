@@ -1,0 +1,37 @@
+#-----------------------[AJAX]-------------------------------------------------------------------------------------------------------------------------------------------
+
+
+#-----[COMMON TERMS]----------------------------------------------------------------------------------------------------------------------------
+
+- AJAX => ASYNCHRONOUS JAVASCRIPT IN XML
+
+- responseText => THIS PROPERTY RETURNS THE SERVER RESPONSE 
+AS A TEXT STRING WHICH CAN BE USED TO UPDATE THE CONTENT OF 
+A WEB PAGE
+
+
+
+#-----[NOTES]-------------------------------------------------------------------------------------------------------------------------------------------
+
+- AJAX IS USED TO SEND DATA BETWEEN THE CLIENT AND THE SERVER 
+WITHOUT HAVING TO EXPLICITLY RELOAD THE BROWSER PAGE
+
+- AJAX CAN BE USED TO REQUEST DATA FROM A JSON FILE 
+
+- CREATING AN XMLHttpRequest OBJECT 
+
+var xhttp = new XMLHttpRequest();
+
+
+- THE SERVER RESPONSE IS READY ONCE THE FOLLOWING IS TRUE:
+
+this.readyState == 4 && this.status == 200
+
+
+# -----------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
