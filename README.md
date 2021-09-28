@@ -30,6 +30,14 @@ This repo outlines my journey to mastering JavaScript.
 - JavaScript Object Notation (JSON) ✔
 - Asynchronous JavaScript for XML (AJAX) ✔
 
+- Prototypes
+- Constructors
+- Overriding Derived Properties
+- Prototype Interference
+- Polymorphism
+- Getters and Setters
+
+
 ## Design Patterns
 
 
