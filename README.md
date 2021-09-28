@@ -37,10 +37,10 @@ This repo outlines my journey to mastering JavaScript.
 - Getters and Setters
 
 
-## Design Patterns
+<!--## Design Patterns
 
 
-## JS Tools and Libraries
+## JS Tools and Libraries-->
 
 
 ## Learning Resources
