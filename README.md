@@ -1,11 +1,12 @@
 # JavaScript Practice 🟡⚫🟡⚫
 
+
+<img style="align-items: center;" src = "https://user-images.githubusercontent.com/55777067/135094588-c42c7322-4ab7-48d4-a14a-ab9168b95ad6.png">
+
+
 ## Table of contents
 * [General Info](#general-info)
 * [Topics Covered](#topics-covered)
-* [Mini Projects](#mini-projects)
-* [Design Patterns](#design-patterns)
-* [JS Tools and Libraries](#js-tools)
 * [Learning Resources](#resources)
 
 
@@ -29,11 +30,18 @@ This repo outlines my journey to mastering JavaScript.
 - Destructuring Objects ✔
 - JavaScript Object Notation (JSON) ✔
 - Asynchronous JavaScript for XML (AJAX) ✔
+- Prototypes
+- Constructors
+- Overriding Derived Properties
+- Prototype Interference
+- Polymorphism
+- Getters and Setters
 
-## Design Patterns
+
+<!--## Design Patterns
 
 
-## JS Tools and Libraries
+## JS Tools and Libraries-->
 
 
 ## Learning Resources
