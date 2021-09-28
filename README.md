@@ -29,7 +29,6 @@ This repo outlines my journey to mastering JavaScript.
 - Destructuring Objects ✔
 - JavaScript Object Notation (JSON) ✔
 - Asynchronous JavaScript for XML (AJAX) ✔
-
 - Prototypes
 - Constructors
 - Overriding Derived Properties
