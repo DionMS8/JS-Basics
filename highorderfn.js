@@ -1,3 +1,16 @@
+// MAP
+
+// FILTER
+
+// SORT 
+
+// REDUCE
+
+
+
+
+
+
 function makeAdjectifier(adjective){
     return function(string) {
         return adjective + " " + string
