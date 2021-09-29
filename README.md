@@ -5,7 +5,7 @@
 
 
 ## Table of contents
-* [General Info](#general-info)
+* [General Information](#general-info)
 * [Topics Covered](#topics-covered)
 * [Learning Resources](#resources)
 
