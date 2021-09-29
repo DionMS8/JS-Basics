@@ -15,6 +15,10 @@ console.log(houseObject.getFurniture());
 
 //-----[CREATING AN OBJECT LITERAL]--------------------------------------------------------------------------------------------------
 
+// OBJECT DATA IS "ENCAPSULATED" INSIDE AN OBJECT PACKAGE
+// AN OBJECT PACKAGE IS COMPOSED OF KEY-VALUE PAIRS
+
+
 const book1 = {
     title: 'Book One',
     author: 'John Doe',
@@ -81,4 +85,18 @@ Book.prototype.revise = function(newYear) {
 
 book2.revise('2018');
 console.log(book2);
+
+
+//-----[ENCAPSULATION]------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+//-----[POLYMORPHISM]--------------------------------------------------------------------------------------------------
+
+
+
+
 

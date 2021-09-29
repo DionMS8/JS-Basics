@@ -26,12 +26,7 @@ for(let i = 0; i < companies.length; i++) {
 
 //--[EXAMPLE 1 - PRINTING COMPANY NAMES]-------------------------------------------------------------------------------------------------------------------------
 
-companies.forEach((company) => {
-    console.log(company.name);
-});
-
-
-//--[EXAMPLE 2 -    ]-------------------------------------------------------------------------------------------------------------------------------------------
+companies.forEach(company => console.log(company.name));
 
 
 
@@ -47,15 +42,17 @@ companies.forEach((company) => {
 const companyNames = companies.map(company => company.name)
 console.log(companyNames);
 
+
 //--[EXAMPLE 2 - USING THE SQUARE ROOT MATH FUNCTION]--------------------------------------------------------------------------
 
-// THIS RETURNS A NEW ARRAY WITH THE SQUARE ROOT
-// OF ALL THE ORIGINAL VALUES
+// THIS RETURNS A NEW ARRAY WITH THE SQUARE ROOT of EACH 
+// ARRAY ELEMENT IN THE "AGES" ARRAY
 
+const sqrtdblAges = ages
+    .map(age => Math.sqrt(age))
+    .map(age => age * 2);
 
-const randomNums = [5, 10, 17, 25];
-const newArray = nums.map(Math.sqrt);
-console.log(newArray);
+console.log(sqrtdblAges);
 
 
 //-----[FILTER METHOD]--------------------------------------------------------------------------------------------------------------------------------------
@@ -105,12 +102,27 @@ console.log(ages.filter(age => age >= 18));
 
 
 
-//-----[SORT]------------------------------------------------------------------------------------------------------------------------------------------
+//-----[SORT METHOD]--------------------------------------------------------------------------------------------------------------------------------
+
+// THE SORT METHOD ARRANGES THE ARRAY ELEMENTS 
+// BY DEFAULT, IT SORTS IN ALPHABETICAL AND ASCENDING ORDER
+
+letters.sort()
+
+// SORTING THE NUMBERS IN AN ARRAY IN DESCENDING ORDER
+const points = [80, 200, 2, 10, 50, 20]
+points.sort((a,b) => {return b-a})
+
+// IN ASCENDING ORDER...
+points.sort((a,b) => {return a-b})
+
+// FINDING THE HIGHEST VALUE IN AN ARRAY
 
 
+// FINDING THE LOWEST VALUE IN AN ARRAY
 
 
-
+// SORTING THE COMPANIES IN ASCENDING ORDER
 
 
 
@@ -166,8 +178,17 @@ roundedTotal = floatNumbers.reduce((total, num) => {
 
 
 
-//-----------------------------------------------------------------------------------------------------------------------------------------------------
+//-----[COMBINING ARRAY METHODS]------------------------------------------------------------------------------------------------------------------------------------------------
 
+// THIS WILL RETURN AN ARRAY THAT HAS BEEN SUBJECTED TO FOUR (4) DIFFERENT ARRAY METHODS
+
+const combinedMethods = ages
+  .map(age => age * 2)          // EACH ARRAY ELEMENT IS MULTIPLIED BY 2
+  .filter(age => age >= 40)     // CHECKS FOR ARRAY VALUES THAT ARE >= 40
+  .sort((a, b) => a - b)        // SORTS THE ARRAY IN ASCENDING ORDER
+  .reduce((a, b) => a + b, 0);  // RETURNS THE ACCUMULATED TOTAL OF ALL ARRAY VALUES
+
+console.log(combinedMethods);
 
 
 

@@ -21,24 +21,6 @@ letters.unshift("z")
 letters.slice(1,2)
 
 
-//-----[SORT METHOD]--------------------------------------------------------------------------------------------------------------------------------
-
-// THE SORT METHOD ARRANGES THE ARRAY ELEMENTS 
-// BY DEFAULT, IT SORTS IN ALPHABETICAL AND ASCENDING ORDER
-letters.sort()
-
-// SORTING THE NUMBERS IN AN ARRAY IN DESCENDING ORDER
-const points = [80, 200, 2, 10, 50, 20]
-points.sort((a,b) => {return b-a})
-
-// IN ASCENDING ORDER...
-points.sort((a,b) => {return a-b})
-
-// FINDING THE HIGHEST VALUE IN AN ARRAY
-
-
-// FINDING THE LOWEST VALUE IN AN ARRAY
-
 
 //-----[SPLICE]-----------------------------------------------------------------------------------------------------------------------------------------
 

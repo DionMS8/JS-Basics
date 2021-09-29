@@ -1,8 +1,13 @@
+//-----[ARROW FUNCTIONS]----------------------------------------------------------------------
+
+// INTRODUCED IN ES6
+// MORE CONCISE
+// IMPLICIT RETURN WHICH ELIMINATES THE NEED FOR THE "RETURN" KEYWORD
 function sum(a,b) {
     return a + b
 }
 
-let sum2 = (a,b) => a + b
+let arrowSum = (a,b) => a + b;
 
 // Parameters are on the left of the arrow 
 // The executable code for the function is on the right of the arrow
