@@ -12,24 +12,31 @@ const houseObject = new House('red')
 
 console.log(houseObject.getFurniture());
 
-// OBJECT LITERALS
+
+//-----[CREATING AN OBJECT LITERAL]--------------------------------------------------------------------------------------------------
+
 const book1 = {
     title: 'Book One',
     author: 'John Doe',
     year: '2021',
 
-    // Defining a Method within the Constructor
-    getSummary: function() { 
-        //return '${this.title} was written by ${this.author} in ${this.year};
+    // DEFINING A METHOD WITHIN THE CONSTRUCTOR
+    getSummary: () => { 
+        return `${this.title} was written by ${this.author} in ${this.year}`;
     }
 }
 
+// PRINTING INFORMATION ABOUT THE OBJECT 
 console.log(book1);
 console.log(book1.title);
+
+// PRINTING THE KEYS AND VALUES OF THE OBJECT
 console.log(Object.keys(book1));
 console.log(Object.values(book1));
 
-//CONSTRUCTOR
+
+
+//-----[CONSTRUCTORS]-------------------------------------------------------------------------------------------------------------------
 function Book(title, author, year){
     this.title;
     this.author;
