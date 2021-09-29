@@ -16,6 +16,8 @@ This repo outlines my journey to mastering JavaScript.
 
 ## Topics Covered
 
+### General Topics
+
 - DOM Manipulation ✔
 - Events ✔
 - Promises ✔
@@ -34,7 +36,7 @@ This repo outlines my journey to mastering JavaScript.
 - Overriding Derived Properties
 - Getters and Setters
 
-Object Oriented Programming (OOP) in JS
+### Object Oriented Programming (OOP) 
 - Classes
 - Objects
 - Constructors
