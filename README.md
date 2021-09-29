@@ -5,7 +5,7 @@
 
 
 ## Table of contents
-* [General Info](#general-info)
+* [General Information](#general-info)
 * [Topics Covered](#topics-covered)
 * [Learning Resources](#resources)
 
@@ -16,6 +16,8 @@ This repo outlines my journey to mastering JavaScript.
 
 ## Topics Covered
 
+### General Topics
+
 - DOM Manipulation ✔
 - Events ✔
 - Promises ✔
@@ -25,17 +27,22 @@ This repo outlines my journey to mastering JavaScript.
 - Recursion ✔
 - Async-Await 
 - Arrays ✔
+- Higher Order Functions and Arrays ✔
 - Inheritance ✔
 - APIs ✔
 - Destructuring Objects ✔
 - JavaScript Object Notation (JSON) ✔
 - Asynchronous JavaScript for XML (AJAX) ✔
-- Prototypes
-- Constructors
 - Overriding Derived Properties
+- Getters and Setters
+
+### Object Oriented Programming (OOP) 
+- Classes
+- Objects
+- Constructors
+- Prototypes
 - Prototype Interference
 - Polymorphism
-- Getters and Setters
 
 
 <!--## Design Patterns
