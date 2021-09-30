@@ -1,6 +1,5 @@
 //-----[JS FUNCTIONS]-----------------------------------------------------------------------------------------------------------------------------------------------------
 
-
 //-----[CREATING A MULTIPLICATION FUNCTION]------------------------------------------------------------------------------------------------------------------------------------------
 
 function multiplication (x1, x2) { 
@@ -50,5 +49,20 @@ var hottifier = makeAdjectifier("Hot")
 console.log(hottifier("Wings"));
 
 
-//---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+//-----[DEFAULT PARAMETER VALUES]----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+// INTRODUCED IN ES6
+
+// IF NO PARAMETER IS PROVIDED OR AN UNDEFINED PARAMETER IS PROVIDED, THE
+// DEFAULT PARAMETER WILL BE ASSIGNED FOR THE FUNCTION TO BE EXECUTED
+
+function defaultParam (z = 8) {return z;};
+
+console.log(defaultParam())            // THIS RETURNS 8
+console.log(defaultParam(undefined))   // THIS RETURNS 8
+console.log(defaultParam(10))          // THIS RETURNS 10
+console.log(defaultParam(null))        // THIS RETURNS null
+
+
+
 

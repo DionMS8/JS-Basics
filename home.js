@@ -60,13 +60,13 @@ while (saiyans[i]) {
 
 //FOR LOOPS ************************************************************
 
-//for(let ms8=0; ms8 <= 100; ms8+=4) {
+for(let ms8=0; ms8 <= 100; ms8+=4) {
 
-// console.log(ms8);
+console.log(ms8);
 
-//}
+}
 
-//DO WHILE LOOPS *******************************************************
+//-----[DO WHILE LOOPS]*******************************************************
 
 do {
     console.log('DO WHILE LOOP!');
@@ -76,7 +76,7 @@ do {
 while (ms8 < 8);
 
 
-//IF ELSE
+//-----[IF ELSE]----------------------------------------------------------------------
 
 let sale = true;
 
@@ -104,17 +104,11 @@ else {
 
 // = is assignment
 // == checks if values are equal
-// === also checks if the data type matches
+// === also checks if the data type is the same
 
 
-// CONSTANTS **********************************************************
-const pi = 3.14; 
-//pi = 8;
-console.log(pi);
+//-----[HTML DOM]--------------------------------------------------------------------------------------
 
-// An error will arise if you try to reassign a new value to a const.
-
-//HTML DOM *************************************************************
 let myElement = document.createElement('h1');
 let mySpan = document.createElement('span');
 

@@ -3,23 +3,32 @@
 // INTRODUCED IN ES6
 // MORE CONCISE
 // IMPLICIT RETURN WHICH ELIMINATES THE NEED FOR THE "RETURN" KEYWORD
+// "THIS" IS PICKED UP FROM THE SURROUNDINGS
+
+// CREATING A REGULAR FUNCTION USING TRADITIONAL SYNTAX
 function sum(a,b) {
     return a + b
 }
 
+// CREATING THE SAME FUNCTION USING ES6 ARROW SYNTAX
 let arrowSum = (a,b) => a + b;
 
-// Parameters are on the left of the arrow 
-// The executable code for the function is on the right of the arrow
-// Everything after the arrow is returned
+// PARAMETERS ARE ON THE LEFT OF THE ARROW
+// EXECUTABLE CODE FOR THE FUNCTION IS ON THE RIGHT OF THE ARROW
+// EVERYTHING AFTER THE ARROW IS RETURNED
 
 function isPositive(number) {
     return number >= 0
 }
 
-let isPositive2 = number => number >= 0
+// IF THERE IS ONE PARAMETER, THE PARENTHESES CAN BE OMITTED
 
-// Since there is one parameter, the brackets are not necessary
+let isPositive2 = number => number >= 0;
+
+// IF THERE ARE NO PARAMETERS, THE PARENTHESES AND CURLY BRACES ARE MANDATORY 
+
+() => {(console.log(2*2))};
+
 
 function randomNumber() {
     return Math.randomNumber
@@ -44,4 +53,26 @@ document.getElementById("saiyanName").style.display = "block";
 
 // document.getElementById("saiyanName").style.display = "none"; 
 // THIS HIDES THE HTML ELEMENT
+
+
+//-----[THIS REFERENCE KEYWORD]------------------------------------------------------------------------------------
+
+// EXAMPLE 1 - USING IT IN AN ARROW FUNCTION, WITHIN ANOTHER FUNCTION
+
+// THE VALUE OF THE "THIS" REFERENCE IS TAKEN FROM THE SURROUNDING 
+// WHICH IS THE OVERALL FUNCTION HERE
+
+() => {
+    this.myVar = 0;
+    setTimeout(
+        () => {
+            this.myVar++; 
+            console.log(this.myVar);
+        }, 
+        
+        0
+    );
+}
+
+
 
