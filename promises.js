@@ -1,6 +1,8 @@
 
+//-----[JS PROMISES]----------------------------------------------------------------------------------------------------
+
 // AN INSTANCE OF THE JS PROMISE OBJECT IS CREATED USING THE 'NEW' KEYWORD 
-// TO ACCESS THE THE PROMISE COSTRUCTOR FUNCTION 
+// TO ACCESS THE THE PROMISE CONSTRUCTOR FUNCTION 
 
 const p = new Promise((resolve, reject) => {
     let a = 1 + 1;                                      // THE PROMISE IS STATED AND STORED IN A VARIABLE
@@ -23,15 +25,25 @@ p.then((message) => {
 })
 
 
-// SETTIMEOUT() FUNCTION
+//-----[SETTIMEOUT() FUNCTION]---------------------------------------------------------------------------
 
-const loginAlert = () =>{
+// THIS FUNCTION CREATES A DELAY BEFORE ANOTHER FUNCTION IS EXECUTED
+
+// IT TAKES 2 ARGUMENTS/PARAMETERS
+// 1ST ARGUMENT IS THE FUNCTION TO BE EXECUTED AFTER THE DELAY 
+// 2ND ARGUMENT IS THE DELAY IN MILLISECONDS
+
+//-----[EXAMPLE 1]------------------------------------------------------------------------------------------
+
+const loginAlert = () => {
     alert('Login');
-  };
+};
    
 setTimeout(loginAlert, 6000);
 
-// MORE PRACTICE
+
+
+//-----[MORE PRACTICE]------------------------------------------------------------------------------------
 
 let firstFunction = () => {
     return new Promise((resolve, reject) => {

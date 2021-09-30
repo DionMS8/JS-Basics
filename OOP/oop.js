@@ -4,11 +4,11 @@ class House {
     }
 
     getFurniture() {
-        return 'bed' //Functions would be shared between all objects of the class
+        return "bed" //Functions would be shared between all objects of the class
     }
 }
 
-const houseObject = new House('red')
+const houseObject = new House("yellow")
 
 console.log(houseObject.getFurniture());
 
