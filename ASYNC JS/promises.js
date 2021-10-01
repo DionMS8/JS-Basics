@@ -1,5 +1,5 @@
 
-//-----[JS PROMISES]----------------------------------------------------------------------------------------------------
+//-----[PROMISES]----------------------------------------------------------------------------------------------------
 
 // AN INSTANCE OF THE JS PROMISE OBJECT IS CREATED USING THE 'NEW' KEYWORD 
 // TO ACCESS THE THE PROMISE CONSTRUCTOR FUNCTION 

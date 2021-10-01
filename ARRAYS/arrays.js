@@ -45,3 +45,16 @@ console.log(letters.join())
 console.log(letters.reverse())
 
 
+
+//-----[GETTING A RANDOM VALUE FROM AN ARRAY]--------------------------------------------------------------------------
+
+const fruits = ["🍎", "🍉", "🍍", "🍓"]
+
+let randomFruit = fruits[Math.floor(Math.random() * fruits.length)];
+
+console.log(randomFruit);
+
+
+
+
+
