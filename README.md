@@ -20,29 +20,32 @@ This repo outlines my journey to mastering JavaScript.
 
 - DOM Manipulation ✔
 - Events ✔
-- Promises ✔
 - APIs ✔
 - Functions ✔
 - Arrow Functions ✔
 - Recursion ✔
-- Async-Await 
 - Arrays ✔
 - Higher Order Functions and Arrays ✔
 - Inheritance ✔
 - APIs ✔
-- Destructuring Objects ✔
 - JavaScript Object Notation (JSON) ✔
 - Asynchronous JavaScript for XML (AJAX) ✔
 - Overriding Derived Properties
 - Getters and Setters
+- Callbacks ✔
+- Promises ✔
+- Async-Await ✔
+- Generators
 
 ### Object Oriented Programming (OOP) 
-- Classes
-- Objects
-- Constructors
-- Prototypes
+
+- Classes ✔
+- Objects ✔
+- Constructors ✔
+- Prototypes ✔
 - Prototype Interference
 - Polymorphism
+- Destructuring Objects ✔
 
 
 <!--## Design Patterns
