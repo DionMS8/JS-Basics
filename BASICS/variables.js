@@ -49,5 +49,15 @@ console.log(`${person} is the host of Blues Clues`);
 
 
 
+//-----[ROUNDING A FLOATING POINT NUMBER TO A FIXED NUMBER OF DECIMAL PLACES]---------------------------------------------
+
+// DECIMAL NUMBER = toFixed(DESIRED NUMBER OF DECIMAL PLACES)
+
+let pi = 3.1415926535;
+
+pi = pi.toFixed(2);
+
+console.log(pi); // => 3.14
+
 
 

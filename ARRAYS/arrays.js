@@ -55,6 +55,9 @@ let randomFruit = fruits[Math.floor(Math.random() * fruits.length)];
 console.log(randomFruit);
 
 
+// EMPTYING THE ARRAY BY SETTING IT'S LENGTH TO 0
+
+fruits.length = 0;
 
 
 

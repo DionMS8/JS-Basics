@@ -28,7 +28,7 @@ function greeting2(yourName) {
 
 }
 
-let name = prompt("What is your name?"); //stores the user's response in a variable
+// let name = prompt("What is your name?"); //stores the user's response in a variable
 
 // console.log(greeting2(name));
 
