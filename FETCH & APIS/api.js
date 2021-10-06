@@ -44,5 +44,44 @@ const generateHtml = (data)=> {
 
 }
 
+//-----[URL OBJECT]----------------------------------------------------------------------------------------------------
+
+// THE URL CONSTRUCTOR PARSES A GIVEN URL STRING INTO A URL OBJECT DEFINED BY ITS PARAMETERS
+new URL(url, [base])
+
+// CAPTURING THE URL OF THE CURRENT WEB PAGE
+newURL(window.location.href)
+newURL(window.location.href).searchParams.get("parameter")
+
+//-----[ACCESSING THE OBJECT PARAMETERS]
+
+// SETTING THE PARAMETERS OF THE URL OBJECT TO
+
+const urlObject = new URL();
+
+urlObject.searchParams.set("parameter", "value");
+
+// THE PARAMETERS  OF THE URL OBJECT CAN THEN BE EASILY READ OR MANIPULATED
+
+// SEARCHING THROUGH THE PARAMETERS OF THE URL OBJECT
+const urlObject = new URL("https://google.com/search?query=JavaScript").searchParams.get();
+
+urlObject.search 
+
+// GETTING THE FULL URL USING HREF and TOSTRING()
+
+// urlObject.href
+urlObject.toString()
+
+//-----[ENCODING]
+
+// SPACES ARE REPLACED WITH %20
+
+
+//-----[USING IN CONJUNCTION WITH FETCH()]
+
+
+
+
 
 
