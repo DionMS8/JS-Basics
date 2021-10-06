@@ -30,14 +30,15 @@ This repo outlines my journey to mastering JavaScript.
 - APIs ✔
 - JavaScript Object Notation (JSON) ✔
 - Asynchronous JavaScript for XML (AJAX) ✔
-- Overriding Derived Properties
-- Getters and Setters
+
 - Callbacks ✔
 - Promises ✔
 - Async-Await ✔
 - URL Object ✔
-- Bind() Function ✔
+- Bind( ) Function ✔
 - Generators
+- Overriding Derived Properties
+- Getters and Setters
 
 ### Object Oriented Programming (OOP) 
 
