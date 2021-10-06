@@ -61,6 +61,7 @@ This repo outlines my journey to mastering JavaScript.
 - W3Schools
 - freeCodeCamp
 - TraversyMedia
+- dcodeYT
 - Clever Programmer
 
 
