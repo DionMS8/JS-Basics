@@ -30,7 +30,6 @@ This repo outlines my journey to mastering JavaScript.
 - APIs ✔
 - JavaScript Object Notation (JSON) ✔
 - Asynchronous JavaScript for XML (AJAX) ✔
-
 - Callbacks ✔
 - Promises ✔
 - Async-Await ✔
