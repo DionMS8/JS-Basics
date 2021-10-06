@@ -1,0 +1,19 @@
+//-----[THIS KEYWORD]---------------------------------------------------------------
+
+// IT REPRESENTS AN OBJECT 
+
+// THE OBJECT VARIES DEPENDING ON THE CONTEXT
+
+// SOME EXAMPLES OF THESE CONTEXTS:
+// - ADDING EVENTS TO HTML ELEMENTS
+// - USING THE BIND() FUNCTION
+// - ARROW FUNCTIONS
+
+
+
+
+
+
+
+
+
