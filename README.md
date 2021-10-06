@@ -20,7 +20,7 @@ This repo outlines my journey to mastering JavaScript.
 
 - DOM Manipulation ✔
 - Events ✔
-- APIs ✔
+- Scope ✔
 - Functions ✔
 - Arrow Functions ✔
 - Recursion ✔
@@ -35,6 +35,8 @@ This repo outlines my journey to mastering JavaScript.
 - Callbacks ✔
 - Promises ✔
 - Async-Await ✔
+- URL Object ✔
+- Bind() Function ✔
 - Generators
 
 ### Object Oriented Programming (OOP) 
