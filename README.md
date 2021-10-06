@@ -20,7 +20,7 @@ This repo outlines my journey to mastering JavaScript.
 
 - DOM Manipulation ✔
 - Events ✔
-- Scope ✔
+- Scope (Global, Function, Block) ✔
 - Functions ✔
 - Arrow Functions ✔
 - Recursion ✔
