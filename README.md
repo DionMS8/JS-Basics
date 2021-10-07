@@ -20,7 +20,7 @@ This repo outlines my journey to mastering JavaScript.
 
 - DOM Manipulation ✔
 - Events ✔
-- APIs ✔
+- Scope (Global, Function, Block) ✔
 - Functions ✔
 - Arrow Functions ✔
 - Recursion ✔
@@ -30,12 +30,14 @@ This repo outlines my journey to mastering JavaScript.
 - APIs ✔
 - JavaScript Object Notation (JSON) ✔
 - Asynchronous JavaScript for XML (AJAX) ✔
-- Overriding Derived Properties
-- Getters and Setters
 - Callbacks ✔
 - Promises ✔
 - Async-Await ✔
+- URL Object ✔
+- Bind( ) Function ✔
 - Generators
+- Overriding Derived Properties
+- Getters and Setters
 
 ### Object Oriented Programming (OOP) 
 
@@ -59,6 +61,7 @@ This repo outlines my journey to mastering JavaScript.
 - W3Schools
 - freeCodeCamp
 - TraversyMedia
+- dcodeYT
 - Clever Programmer
 
 
