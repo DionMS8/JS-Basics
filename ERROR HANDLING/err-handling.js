@@ -7,7 +7,8 @@
 // FINALLY{} - EXECUTES CODE AFTER TRY & CATCH REGARDLESS OF THE RESULT
 // THROW{} - CREATES CUSTOM ERRORS
 
-// err - THIS IS THE JS ERROR OBJECT
+// err - THIS IS THE JS ERROR OBJECT AND IT IS 
+// MADE UP OF A "NAME" AND A "MESSAGE"
 
 // WHENEVER AN ERROR IS ENCOUNTERED BY TRY{}, 
 // AN ERROR OBJECT IS GENERATED AND PASSED INTO 
@@ -24,21 +25,44 @@ try {
 
     console.log("END TRY RUNS");
 
-}
-
-catch(err) { 
+} catch(err) { 
 
     console.log("ERROR DETECTED " + err.stack);
 
-}
-
-finally {
+} finally {
 
     console.log("THIS WILL ALWAYS RUN");
 
 }
 
 console.log("EXECUTION CONTINUES");
+
+
+// NOTE: TRY-CATCH ONLY HANDLES RUNTIME ERRORS
+
+
+
+
+let json = '{ "age": 30 }';
+ 
+try {
+    
+  let user = JSON.parse(json); 
+
+  if (!user.name) {
+    throw new SyntaxError("Incomplete Data: No Name Found");
+  }
+ 
+  console.log(user.name);
+ 
+} catch(err) {
+
+  console.log(`JSON Error: ${err}`); 
+
+}
+
+// JSON Error: SyntaxError: 
+// Incomplete Data: No Name Found
 
 
 
