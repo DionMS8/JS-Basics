@@ -18,15 +18,16 @@ This repo outlines my journey to mastering JavaScript.
 
 ### General Topics
 
-- DOM Manipulation ✔
-- Events ✔
+- Variables (var, let, const) ✔
 - Scope (Global, Function, Block) ✔
 - Functions ✔
 - Arrow Functions ✔
-- Recursion ✔
 - Arrays ✔
 - Higher Order Functions and Arrays ✔
 - Error Handling (Try, Catch, Finally, Throw) ✔
+- DOM Manipulation ✔
+- Events ✔
+- Recursion ✔
 - APIs ✔
 - JavaScript Object Notation (JSON) ✔
 - Asynchronous JavaScript for XML (AJAX) ✔
