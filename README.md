@@ -26,7 +26,7 @@ This repo outlines my journey to mastering JavaScript.
 - Recursion ✔
 - Arrays ✔
 - Higher Order Functions and Arrays ✔
-- Inheritance ✔
+- Error Handling (Try, Catch, Finally, Throw) ✔
 - APIs ✔
 - JavaScript Object Notation (JSON) ✔
 - Asynchronous JavaScript for XML (AJAX) ✔
@@ -44,6 +44,7 @@ This repo outlines my journey to mastering JavaScript.
 - Classes ✔
 - Objects ✔
 - Constructors ✔
+- Inheritance
 - Prototypes ✔
 - Prototype Interference
 - Polymorphism
