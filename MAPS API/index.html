@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>My Google Map</title>
+        <link rel="stylesheet" type="text/css" href="style.css" />
+    </head>
+
+    <body> 
+
+        <h1>My Google Map</h1>
+
+        <div id="map"></div>
+
+        <script>
+
+            function initMap() {
+
+                // CREATING AN OBJECT TO STORE OPTIONS
+                var options = {
+                    zoom: 8,
+                    center: {lat:10.6918,lng:61.2225}
+                }
+
+                // CREATING THE MAP OBJECT USING THE MAP FUNCTION
+                let map = new google.maps.Map(document.getElementById("map"), options);
+            }
+
+        </script>
+
+        <script
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDmzctIFju_a1Cl96Z_-umD_hobawNFdno&callback=initMap&libraries=&v=weekly"
+            async>
+        </script>
+
+    </body>
+
+</html>
+
+
+

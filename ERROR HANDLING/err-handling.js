@@ -1,21 +1,16 @@
-//-----[ERROR HANDLING]-----------------------------------------------------------------------------
+//-----[CONTROL FLOW AND ERROR HANDLING]-----------------------------------------------------------------------------
 
-//-----[TRY, CATCH, FINALLY, THROW]-----------------------------------------------------------------
+// CONTROL FLOW REFERS TO THE USE OF LOOPS, 
+// IF STATEMENTS,
+
+// A CONTROL FLOW APPROACH IS PREFERRED OVER ERROR HANDLING
+
+//-----[TRY, CATCH, FINALLY, THROW]----------------------------------------------------------------------------------------
 
 // TRY{} - TESTING A CODE BLOCK FOR ERRORS
 // CATCH{} - HANDLES THE ERROR
 // FINALLY{} - EXECUTES CODE AFTER TRY & CATCH REGARDLESS OF THE RESULT
 // THROW{} - CREATES CUSTOM ERRORS
-
-// err - THIS IS THE JS ERROR OBJECT AND IT IS 
-// MADE UP OF A "NAME" AND A "MESSAGE"
-
-// WHENEVER AN ERROR IS ENCOUNTERED BY TRY{}, 
-// AN ERROR OBJECT IS GENERATED AND PASSED INTO 
-// CATCH{} WHICH HANDLES IT
-
-// ERROR.STACK ALLOWS FOR THE EXACT LOCATION OF 
-// THE ERROR TO BE SHOWN
 
 try {
 
@@ -26,7 +21,7 @@ try {
     console.log("END TRY RUNS");
 
 } catch(err) { 
-
+    
     console.log("ERROR DETECTED " + err.stack);
 
 } finally {
@@ -38,10 +33,18 @@ try {
 console.log("EXECUTION CONTINUES");
 
 
+// err - THIS IS THE JS ERROR OBJECT AND IT IS 
+// MADE UP OF A "NAME" AND A "MESSAGE"
+
+// WHENEVER AN ERROR IS ENCOUNTERED BY TRY{}, 
+// AN ERROR OBJECT IS GENERATED AND PASSED INTO 
+// CATCH{} WHICH HANDLES IT
+
+// ERR.STACK ALLOWS FOR THE EXACT LOCATION OF 
+// THE ERROR TO BE SHOWN
+
+
 // NOTE: TRY-CATCH ONLY HANDLES RUNTIME ERRORS
-
-
-
 
 let json = '{ "age": 30 }';
  
@@ -63,6 +66,4 @@ try {
 
 // JSON Error: SyntaxError: 
 // Incomplete Data: No Name Found
-
-
 
