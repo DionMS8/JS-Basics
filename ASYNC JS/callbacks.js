@@ -7,6 +7,14 @@
 // CALLBACKS ARE USED BOTH SYNCHRONOUSLY AND 
 // ASYNCHRONOUSLY
 
+//-----[EXAMPLE OF SYNCHRONOUS CALLBACKS]
+
+const items = [1, 2, 3, 4, 5];
+
+items.forEach((item) => {
+    console.log(item);
+});
+
 
 //-----[SETTIMEOUT() FUNCTION]---------------------------------------------------------------------------------------------------------
 
@@ -33,6 +41,29 @@ setTimeout(loginAlert, 6000);
 setTimeout(() => {
     console.log("WAITED 1 SECOND...");
 },1000);
+
+
+//-----[EXAMPLE 3]--------------------------------------------------------------------------------------------------------------
+
+function loginUser(email, password, callback) {
+    setTimeout(() => {
+        console.log("Now we have the data");
+        callback ({username: email});
+    }, 5000)
+}
+
+function getUserVideos (email, callback) {
+    setTimeout(() => {
+        callback (["video1", "video2", "video3"]);
+    }, 1000)
+}
+
+const user = loginUser("codingbeast8@gmail.com", 123456, (user) => {
+    console.log(user);
+    getUserVideos(user.userEmail, videos => {
+        console.log(videos);
+    });
+});
 
 
 //-----[CALLBACK HELL]-------------------------------------------------------------------------------------------------------------
