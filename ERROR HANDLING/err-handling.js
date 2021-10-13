@@ -8,7 +8,7 @@
 //-----[TRY, CATCH, FINALLY, THROW]----------------------------------------------------------------------------------------
 
 // TRY{} - TESTING A CODE BLOCK FOR ERRORS
-// CATCH{} - HANDLES THE ERROR
+// CATCH{} - HANDLING THE ERRORS
 // FINALLY{} - EXECUTES CODE AFTER TRY & CATCH REGARDLESS OF THE RESULT
 // THROW{} - CREATES CUSTOM ERRORS
 

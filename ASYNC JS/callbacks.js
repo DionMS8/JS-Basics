@@ -8,18 +8,34 @@
 // ASYNCHRONOUSLY
 
 
+//-----[SETTIMEOUT() FUNCTION]---------------------------------------------------------------------------------------------------------
 
-//-----[setTimeout()]------------------------------------------------------------------------------------------------
+// THIS FUNCTION CREATES A DELAY BEFORE ANOTHER FUNCTION IS EXECUTED
 
-// THIS CREATES A DELAY IN MILLISECONDS BEFORE A 
-// FUNCTION IS EXECUTED
+// IT TAKES 2 ARGUMENTS/PARAMETERS
+// 1ST ARGUMENT IS THE FUNCTION TO BE EXECUTED AFTER THE DELAY 
+// 2ND ARGUMENT IS THE DELAY IN MILLISECONDS
+
+
+//-----[EXAMPLE 1]--------------------------------------------------------------------------------------------------------------
+
+// CREATING A FUNCTION WHICH WILL SIMULATE A LOGIN ALERT
+const loginAlert = () => {
+    alert("LOGIN SUCCESSFUL");
+};
+
+// USING setTimeout() TO CALLBACK THE loginAlert() FUNCTION AFTER 6000 MS
+setTimeout(loginAlert, 6000);
+
+
+//-----[EXAMPLE 2]--------------------------------------------------------------------------------------------------------------
 
 setTimeout(() => {
-    console.log("Waited 1 Second...");
+    console.log("WAITED 1 SECOND...");
 },1000);
 
 
-//-----[CALLBACK HELL]--------------------------------------------------------------------
+//-----[CALLBACK HELL]-------------------------------------------------------------------------------------------------------------
 
 // NESTED setTimeouts 
 
